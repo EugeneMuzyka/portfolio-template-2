@@ -1,0 +1,58 @@
+html {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.container__body {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container__content {
+    height: 70px;
+    width: 105px;
+}
+
+.div_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icons {
+    width: 100%;
+    height: 100%;
+}
+
+.div_numeral {
+    width: 54px;
+    height: 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 53px;
+    padding: 5px;
+}
+
+.div_text_projects {
+    width: 100%;
+    padding: 5px;
+}

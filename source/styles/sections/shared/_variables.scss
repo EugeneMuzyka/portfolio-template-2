@@ -3,5 +3,9 @@ $gray-background: #F6F6F8;
 $primary-color:#4985ff;
 //typograhy
 $default-rem: 16px;
-$title-fontsize: 36px / $default-rem;
-$paragraph-fontsize: 16/ $default-rem;
+@function getRem($value) {
+    @return #{$value / $default-rem}rem
+}
+
+$title-fontsize: getRem(36px);
+$paragraph-fontsize: getRem(16px);

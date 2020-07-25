@@ -63,7 +63,7 @@ h2 {
 p {
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: $paragraph-fontsize;
     line-height: 1.56rem;
     color: #999999;
 }
@@ -108,7 +108,7 @@ p {
 .img_125 {
     font-style: normal;
     font-weight: normal;
-    font-size: 2.25rem;
+    font-size: $title-fontsize;
     line-height: 3.3rem;
     text-align: right;
 }

@@ -30,17 +30,19 @@ body {
     padding: 50px 0;
 }
 
-
-/* Мы создаем легкие решения */
-
 main {
     width: 100%;
     min-height: 100vh;
-    background: url(../img/Rectangle.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/Rectangle.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #FFFFFF;
+    ;
 }
+
+
+/*   HEADER  */
 
 header {
     position: absolute;
@@ -49,16 +51,14 @@ header {
     border-bottom: 1px solid #E0E0E0;
 }
 
-nav {}
-
-ul {
+.master_list {
     height: 100px;
     display: flex;
     justify-content: flex-end;
     height: 100%;
 }
 
-li {
+.list_graph {
     padding: 40px 20px;
     font-style: normal;
     font-weight: 500;
@@ -66,8 +66,137 @@ li {
     line-height: 1.25rem;
 }
 
-li:last-child {
+.nav_list {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.list_graph:last-child {
     margin-right: 15%;
+}
+
+.list_graph:first-of-type {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+
+/* Мы создаем легкие решения */
+
+.main_content {
+    max-width: 830px;
+    margin-top: 300px;
+    margin-left: 12.6%;
+}
+
+.title_H1_smell {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.title_H1_big {
+    max-width: 829px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+button {
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.button {
+    margin-top: 50px;
+    margin-left: 38%;
+}
+
+
+/* Мы создаем мобильные приложения для крупных корпораций */
+
+.section_about_mobile_app {
+    width: 100%;
+    background: #ffffff;
+}
+
+.title_about_app {
+    max-width: 740px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 16.6%;
+    text-align: center;
+}
+
+.text_about_app {
+    max-width: 730px;
+    margin-left: 17%;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.div_for_contents {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.parent_content {
+    display: flex;
+    justify-content: center;
+}
+
+.img_project_big {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+    padding: 9px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.img_project {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #4985FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_project_cvg {
+    width: 40px;
+    height: 40px;
+}
+
+.text_title_h3 {
+    margin-top: 100px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 1.4rem;
+}
+
+.text_Lorem {
+    width: 220px;
+    font-size: 0.87rem;
 }
 
 
@@ -94,8 +223,7 @@ h2 {
     font-weight: bold;
     font-size: $title-fontsize;
     line-height: 3.3rem;
-    color: #323232;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 p {
@@ -112,6 +240,7 @@ p {
 }
 
 .img_block_HS {
+    margin-top: 50px;
     max-width: 500px;
     max-height: 400px;
 }
@@ -157,4 +286,319 @@ p {
     max-width: 105px;
     max-height: 70px;
     margin: 70px auto;
+}
+
+
+/* Наши работы, на которых мы специализируемся*/
+
+.body-our_job {
+    width: 100%;
+    max-height: 490px;
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.title_button {
+    width: 100%;
+    max-height: 90px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-white {
+    color: #FFFFFF;
+    margin-bottom: 8%;
+    max-width: 540px;
+}
+
+.div_button {
+    margin-right: 10px;
+}
+
+.job_photo_parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.job_photo {
+    max-width: 350px;
+    max-height: 300px;
+}
+
+.img-job_photo {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Исследование и упаковка */
+
+.parent_list_research {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 90px;
+    margin-bottom: 40px;
+}
+
+.child_list_research {
+    max-width: 350px;
+}
+
+.title_research {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 1.4rem;
+}
+
+.numeral {
+    color: #4985FF;
+    ;
+}
+
+.text_under_h3 {
+    margin: 30px 0;
+}
+
+
+/*Наши проекты*/
+
+.body_our_project {
+    width: 100%;
+    background: #F6F6F8;
+}
+
+.discription_our_project {
+    max-width: 100%;
+}
+
+.our_project-title {
+    text-align: center;
+}
+
+.our_project-text {
+    max-width: 730px;
+    margin-left: 18%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.parent_for_photo_our_project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.child_photo_our_project {
+    max-width: 255px;
+    max-height: 255px;
+}
+
+.photo_our_project {
+    width: 100%;
+    height: 100%;
+}
+
+.button-all_service {
+    margin-top: 50px;
+    margin-left: 41%;
+    margin-bottom: 80px;
+}
+
+
+/*Видео о нашей работе */
+
+.body_video_about_our_job {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(../img/fonovoe_foto.png);
+    width: 100%;
+    max-height: 570px;
+}
+
+.info_before_video {
+    max-width: 450px;
+    margin-left: 30%;
+    margin-top: -100px;
+}
+
+.title_before_video {
+    color: #FFFFFF;
+}
+
+.discription_before_video {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.video_about_our_job {
+    max-width: 970px;
+    height: 430px;
+    margin-left: 5%;
+    background: url(../img/imitation_video.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big_button {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #FFFFFF;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.text_button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #FFFFFF;
+    margin-left: 25px;
+}
+
+.circle_div {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-left: 40px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-play {
+    color: #4985FF;
+    margin-left: 7px;
+}
+
+
+/*Подпишитесь на рассылку*/
+
+.body_mailing {
+    width: 100%;
+}
+
+.parent_mailing {
+    border-top: 1px solid #E0E0E0;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.mailing {
+    margin-top: 90px;
+    max-width: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe_text {
+    width: 100%;
+    text-align: center;
+}
+
+.useful_articles {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.div_for_imput {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.imput {
+    width: 300px;
+    height: 45px;
+    border: 1px solid #F2F2F2;
+    padding: 15px 0 13px 33px;
+    border-radius: 30px 0 0 30px;
+}
+
+input {
+    border: none;
+}
+
+.window_right {
+    width: 195px;
+    height: 45px;
+    border-left: 0%;
+    border: 1px solid #F2F2F2;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    background: #4985FF;
+    color: #FFFFFF;
+    padding: 13px 36px 15px 26px;
+    border-radius: 0 30px 30px 0;
+}
+
+.text_garanty {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    text-align: center;
+    color: #999999;
+    margin-top: 35px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    background: #F6F6F8;
+}
+
+.parent_botton_website {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.contact_info {
+    margin: 20px 0 5px
+}
+
+.list_contact {
+    padding: 15px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.87rem;
+    line-height: 1.37rem;
+    color: #999999;
+}
+
+.fa-envelope-o {
+    color: #999999;
+}
+
+.license {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    text-align: center;
+    color: #999999;
+    padding-top: 30px;
+    margin-bottom: -20px;
 }

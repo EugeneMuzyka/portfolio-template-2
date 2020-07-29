@@ -91,7 +91,7 @@ gulp.task('scripts', cb => {
 gulp.task('images', done => {
     gulp
         .src(path.images.source)
-        .pipe(imagemin())
+        //.pipe(imagemin())
         .pipe(gulp.dest(path.images.dest));
     done();
 });

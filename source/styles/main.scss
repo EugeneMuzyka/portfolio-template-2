@@ -4,7 +4,11 @@
 //background-color: grey;
 //}
 @import './shared/index';
-@import 'reset.scss';
+@import 'reset';
+
+// @import './sections/index'; - либо используем разделение файликов по секциям, либо нет (пишем все в одном файле)
+
+
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: $default-rem;
@@ -29,6 +33,29 @@ body {
     margin: 0 auto;
     padding: 50px 0;
 }
+
+.primary-button {
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    &--large {
+            width: 300px;
+            height: 100px;
+            border: 1px solid #FFFFFF;
+            border-radius: 200px;
+            display: flex;
+            align-items: center;
+            background: transparent;        
+    }
+}
+
 
 main {
     width: 100%;
@@ -106,18 +133,7 @@ header {
     line-height: 4rem;
 }
 
-button {
-    width: 200px;
-    height: 45px;
-    background: #4985FF;
-    border-radius: 30px;
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    text-align: center;
-}
+
 
 .button {
     margin-top: 50px;
@@ -151,11 +167,14 @@ button {
     display: flex;
     justify-content: center;
     height: 100%;
+
 }
 
 .parent_content {
     display: flex;
     justify-content: center;
+    flex: 1 1 33%;
+
 }
 
 .img_project_big {
@@ -195,7 +214,6 @@ h3 {
 }
 
 .text_Lorem {
-    width: 220px;
     font-size: 0.87rem;
 }
 
@@ -601,4 +619,23 @@ footer {
     color: #999999;
     padding-top: 30px;
     margin-bottom: -20px;
+}
+
+
+@media screen and (max-width: 769px) {
+    .div_for_contents {
+        flex-wrap: wrap; // сделали, чтобы элементы переносились, если им не хватает места
+        justify-content: space-around;
+    }
+
+    .parent_content {
+        flex: 0 1 50%; // изменили flex-basis, чтобы было по 2 элемента в строку
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .parent_content {
+        flex: 1 1 100%; // изменили flex-basis, чтобы был только 1 элемент на строчке (flex-wrap выше все еще остается, потому 
+                        // экран шириной 420px подпадает под условие media query max-width: 769px , так как он меньше 769px)
+    }
 }

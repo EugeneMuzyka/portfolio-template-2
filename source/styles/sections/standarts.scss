@@ -1,5 +1,48 @@
 @import '../shared/index';
-header {
-    background: blue;
-    width: 40%;
+.High_standart {
+    width: 100%;
+    background: $gray-background;
+}
+
+.parents_block_HS {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.info_block_inside {
+    max-width: 490px;
+    max-height: 295px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $title-fontsize;
+    line-height: 3.3rem;
+    margin-top: 100px;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $paragraph-fontsize;
+    line-height: 1.56rem;
+    color: #999999;
+}
+
+.text_HS {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.img_block_HS {
+    margin-top: 50px;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.advertising_photo img {
+    width: 100%;
+    height: 100%;
 }

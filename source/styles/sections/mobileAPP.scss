@@ -1,0 +1,93 @@
+@import './shared/index';
+
+/* Мы создаем мобильные приложения для крупных корпораций */
+
+.section_about_mobile_app {
+    width: 100%;
+    background: #ffffff;
+}
+
+.title_about_app {
+    max-width: 740px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 16.6%;
+    text-align: center;
+}
+
+.text_about_app {
+    max-width: 730px;
+    margin-left: 17%;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.div_for_contents {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.parent_content {
+    display: flex;
+    justify-content: center;
+}
+
+.img_project_big {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+    padding: 9px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.img_project {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #4985FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_project_cvg {
+    width: 40px;
+    height: 40px;
+}
+
+.text_title_h3 {
+    margin-top: 100px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 1.4rem;
+}
+
+.text_Lorem {
+    width: 220px;
+    font-size: 0.87rem;
+}
+
+@media screen and (min-width: 769px) {
+    .div_for_contents {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+    .parent_content {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .div_for_contents {
+        display: flex;
+        flex-direction: column;
+    }
+}

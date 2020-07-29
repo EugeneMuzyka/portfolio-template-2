@@ -1,0 +1,42 @@
+@import '../shared/index';
+.body_our_project {
+    width: 100%;
+    background: #F6F6F8;
+}
+
+.discription_our_project {
+    max-width: 100%;
+}
+
+.our_project-title {
+    text-align: center;
+}
+
+.our_project-text {
+    max-width: 730px;
+    margin-left: 18%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.parent_for_photo_our_project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.child_photo_our_project {
+    max-width: 255px;
+    max-height: 255px;
+}
+
+.photo_our_project {
+    width: 100%;
+    height: 100%;
+}
+
+.button-all_service {
+    margin-top: 50px;
+    margin-left: 41%;
+    margin-bottom: 80px;
+}

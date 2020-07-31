@@ -29,11 +29,16 @@
         max-width: 1110px;
         margin: 0 auto;
         padding: 50px 0;
+
+        &--no-padding {
+            padding: 0;
+        }
     }
     
     .primary-button {
         width: 200px;
         height: 45px;
+        display: block;
         background: #4985FF;
         border-radius: 30px;
         color: #FFFFFF;
@@ -42,15 +47,7 @@
         font-size: 1rem;
         line-height: 1.25rem;
         text-align: center;
-        &--large {
-            width: 300px;
-            height: 100px;
-            border: 1px solid #FFFFFF;
-            border-radius: 200px;
-            display: flex;
-            align-items: center;
-            background: transparent;
-        }
+        margin: 0 auto;
     }
     
     main {
@@ -71,11 +68,7 @@
         height: 100px;
         border-bottom: 1px solid #E0E0E0;
     }
-    
-    .container_header {
-        max-width: 1110px;
-        margin: 0 auto;
-    }
+
     
     .master_list {
         height: 100px;
@@ -123,22 +116,6 @@
         font-weight: 800;
         font-size: 3rem;
         line-height: 4rem;
-    }
-    
-    button {
-        width: 200px;
-        height: 45px;
-        background: #4985FF;
-        border-radius: 30px;
-        color: #FFFFFF;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 1.25rem;
-        text-align: center;
-        border: none;
-        display: block;
-        margin: 0 auto;
     }
     
     .button {
@@ -275,10 +252,11 @@
     
     .parent_our_projects {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 100%;
         width: 100%;
         border-top: 1px solid #E0E0E0;
+        padding: 70px 0 20px;
     }
     
     .div_for_img125 {
@@ -297,23 +275,22 @@
     }
     
     .div_with_our_projects {
+        flex: 1 0 105px;
         max-width: 105px;
-        max-height: 70px;
-        margin: 70px auto 20px;
+        margin: 1rem;
     }
     /* Наши работы, на которых мы специализируемся*/
     
     .body-our_job {
         width: 100%;
-        max-height: 490px;
-        background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
-        background-position: 0 0;
+        background: linear-gradient(90deg,#504dc2 20.44%,#5f12d0 80.91%), #fff;
         background-repeat: no-repeat;
+        background-position: top, bottom;
+        background-size: 100% 50%;
     }
     
     .title_button {
         width: 100%;
-        max-height: 90px;
         margin-top: 50px;
         margin-bottom: 70px;
         display: flex;
@@ -323,8 +300,10 @@
     
     .title-white {
         color: #FFFFFF;
-        margin-bottom: 8%;
         max-width: 540px;
+        h2 {
+            margin-top: 0;
+        }
     }
     
     .div_button {
@@ -336,8 +315,10 @@
         display: flex;
         justify-content: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         border-bottom: 1px solid #E0E0E0;
         padding-bottom: 85px;
+        margin-bottom: 50px;
     }
     
     .job_photo {
@@ -351,7 +332,11 @@
     }
     
     .child_list_research {
-        max-width: 350px;
+        flex: 1 1 200px;
+        margin-right: 1rem;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     
     .title_research {
@@ -453,6 +438,7 @@
         width: 300px;
         height: 100px;
         border: 1px solid #FFFFFF;
+        background: transparent;
         border-radius: 200px;
         display: flex;
         align-items: center;
@@ -545,6 +531,7 @@
         color: #FFFFFF;
         padding: 13px 36px 15px 26px;
         border-radius: 0 30px 30px 0;
+        margin: 0;
     }
     
     .text_garanty {
@@ -606,35 +593,32 @@
         .parent_content {
             flex: 0 1 50%; // изменили flex-basis, чтобы было по 2 элемента в строку
         }
+        .parents_block_HS {
+            display: flex;
+            flex-flow: column-reverse;
+        }
+
+        .parent_our_projects {
+            flex-wrap: wrap;
+        }
+
+        .body-our_job {
+            background-size: 100% 20%, 100% 80%;
+        }
+
+        .child_list_research {
+            flex: 1 1 100%;
+            padding: 10px;
+        }
+
+        .job_photo {
+            margin: 0 auto;
+        }
     }
     
     @media screen and (max-width: 420px) {
         .parent_content {
             flex: 1 1 100%; // изменили flex-basis, чтобы был только 1 элемент на строчке (flex-wrap выше все еще остается, потому 
             // экран шириной 420px подпадает под условие media query max-width: 769px , так как он меньше 769px)
-        }
-    }
-    
-    @media screen and (max-width: 769px) {
-        .parents_block_HS {
-            display: flex;
-            flex-flow: column-reverse;
-        }
-    }
-    
-    @media screen and (max-width: 769px) {
-        .parent_our_projects {
-            display: flex;
-            justify-content: space-evenly;
-        }
-        .div_with_our_projects {
-            width: 100%;
-        }
-    }
-    
-    @media screen and (max-width: 420px) {
-        .parent_our_projects {
-            display: flex;
-            flex-flow: column;
         }
     }

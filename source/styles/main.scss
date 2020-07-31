@@ -117,11 +117,13 @@ button {
     font-size: 1rem;
     line-height: 1.25rem;
     text-align: center;
+    border: none;
+    display: block;
+    margin: 0 auto;
 }
 
 .button {
     margin-top: 50px;
-    margin-left: 38%;
 }
 
 
@@ -136,14 +138,13 @@ button {
     max-width: 740px;
     margin-top: 60px;
     margin-bottom: 50px;
-    margin-left: 16.6%;
     text-align: center;
+    margin: 60px auto 50px;
 }
 
 .text_about_app {
     max-width: 730px;
-    margin-left: 17%;
-    margin-bottom: 70px;
+    margin: 70px auto;
     text-align: center;
 }
 
@@ -386,9 +387,7 @@ p {
 
 .our_project-text {
     max-width: 730px;
-    margin-left: 18%;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    margin: 50px auto 70px;
 }
 
 .parent_for_photo_our_project {
@@ -409,8 +408,6 @@ p {
 
 .button-all_service {
     margin-top: 50px;
-    margin-left: 41%;
-    margin-bottom: 80px;
 }
 
 
@@ -424,8 +421,7 @@ p {
 
 .info_before_video {
     max-width: 450px;
-    margin-left: 30%;
-    margin-top: -100px;
+    margin: -100px auto 0;
 }
 
 .title_before_video {
@@ -442,7 +438,7 @@ p {
 .video_about_our_job {
     max-width: 970px;
     height: 430px;
-    margin-left: 5%;
+    margin: 0 auto;
     background: url(../img/imitation_video.png);
     display: flex;
     justify-content: center;
@@ -537,7 +533,6 @@ input {
 .window_right {
     width: 195px;
     height: 45px;
-    border-left: 0%;
     border: 1px solid #F2F2F2;
     text-align: center;
     font-style: normal;

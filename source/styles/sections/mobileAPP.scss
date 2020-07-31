@@ -69,24 +69,5 @@ h3 {
 }
 
 .text_Lorem {
-    width: 220px;
     font-size: 0.87rem;
-}
-
-@media screen and (min-width: 769px) {
-    .div_for_contents {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: stretch;
-    }
-    .parent_content {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 420px) {
-    .div_for_contents {
-        display: flex;
-        flex-direction: column;
-    }
 }
